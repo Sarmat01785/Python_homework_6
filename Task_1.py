@@ -5,3 +5,15 @@
 Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
 Каждое число вводится с новой строки.
 """
+a1 = int(input("Введите первый элемент: "))
+d = int(input("Введите разность: "))
+count = int(input("Введите количество элементов: "))
+
+progression = []
+for i in range(count):
+    n = a1 + (i-1) * d
+    progression.append(n)
+
+print("Массив элементов арифметической прогрессии:")
+for n in progression:
+    print(n)
